@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact – Nicole Sarna</title>
+    <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+    <link rel="icon" href="images/ns-diamond-mark-navy.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon3.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body class="inner-page">
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li class="nav-logo"><a href="index.html" class="no-scroll"><img src="images/ns-diamond-mark-navy.svg" alt="Nicole Sarna logo"></a></li>
+            <li><a href="index.html" class="no-scroll">Home</a></li>
+            <li><a href="research.html" class="no-scroll">Research</a></li>
+            <li><a href="publications.html" class="no-scroll">Publications</a></li>
+            <li><a href="cv.html" class="no-scroll">CV</a></li>
+            <li><a href="about.html" class="no-scroll">About</a></li>
+            <li><a href="contact.html" class="no-scroll">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="page-content">
+
+        <div class="page-title-section">
+            <h1>Contact</h1>
+        </div>
+
+        <div id="about-page">
+            <div class="container">
+                <div class="contact-card">
+                    <p class="contact-intro">
+                        I'm always glad to connect about research, collaborations, or
+                        industry and post-doctoral opportunities. Send a message below and
+                        it will land straight in my inbox &mdash; I'll get back to you as
+                        soon as I can.
+                    </p>
+
+                    <div class="fs-message" data-fs-success></div>
+                    <div class="fs-message" data-fs-error></div>
+
+                    <form id="contact-form" class="fs-form">
+                        <div class="fs-row">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" data-fs-field required>
+                            <span class="fs-field-error" data-fs-error="name"></span>
+                        </div>
+                        <div class="fs-row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" data-fs-field required>
+                            <span class="fs-field-error" data-fs-error="email"></span>
+                        </div>
+                        <div class="fs-row">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" data-fs-field required></textarea>
+                            <span class="fs-field-error" data-fs-error="message"></span>
+                        </div>
+                        <input type="hidden" name="_subject" value="New message from your website">
+                        <button type="submit" class="fs-submit" data-fs-submit-btn>
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i> Send Message
+                        </button>
+                    </form>
+
+                    <hr class="contact-divider">
+
+                    <p class="contact-alt-label">Or reach me another way</p>
+                    <div class="contact-methods">
+                        <a class="contact-btn primary" href="mailto:nicole.s.sarna@rice.edu?subject=Hello%20from%20your%20website">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Email Me
+                        </a>
+                        <a class="contact-btn outline" href="https://www.linkedin.com/in/nicolesarna" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
+                        </a>
+                        <a class="contact-btn outline" href="images/Sarna_Nicole_CV.pdf" download>
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End #contact -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 copyright">
+                        <p>Copyright &copy; 2026 Nicole S. Sarna</p>
+                    </div>
+                    <div class="col-sm-2 top">
+                        <span id="to-top">
+                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="col-sm-5 social">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/nicolesarna" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/NicoleSarna_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:nicole.s.sarna@rice.edu" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- End .page-content -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+
+    <!-- Formspree AJAX: submit without leaving the page -->
+    <script>
+      window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+      formspree('initForm', { formElement: '#contact-form', formId: 'xeaqgqkz' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+
+</html>

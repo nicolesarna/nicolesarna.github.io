@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Nicole Sarna</title>
-	<link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
-	<link rel="icon" href="favicon3.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+    <link rel="icon" href="images/ns-diamond-mark-navy.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon3.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-
+    <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,52 +27,38 @@
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
-          <!--  <li>
-                <a href="#about">About</a>
-            </li> -->
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#publications">Publications</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li class="nav-logo"><a href="index.html" class="no-scroll"><img src="images/ns-diamond-mark-navy.svg" alt="Nicole Sarna logo"></a></li>
+            <li><a href="index.html" class="no-scroll">Home</a></li>
+            <li><a href="research.html" class="no-scroll">Research</a></li>
+            <li><a href="publications.html" class="no-scroll">Publications</a></li>
+            <li><a href="cv.html" class="no-scroll">CV</a></li>
+            <li><a href="about.html" class="no-scroll">About</a></li>
+            <li><a href="contact.html" class="no-scroll">Contact</a></li>
         </ul>
     </header>
     <!-- End header -->
 
     <div id="lead">
         <div id="lead-content">
-          <img src="images/avatar.png" alt="Nicole Sarna" class="avatar">
+            <img src="images/avatar.png" alt="Nicole Sarna" class="avatar">
             <h1>Nicole Sarna</h1>
-            <h2>Biomedical Engineering PhD Candidate</h2>
-	    <h3>National Science Foundation Graduate Research Fellow</h3>
+            <h2>Bioengineering PhD Candidate</h2>
+            <h3>National Science Foundation Graduate Research Fellow</h3>
             <h3>Rice University</h3>
-            <a href= images/Sarna_Nicole_CV.pdf class="btn-rounded-white">Download Curriculum Vitae</a><br />
+            <a href="images/Sarna_Nicole_CV.pdf" class="btn-rounded-white">Download CV</a>
             <div class="social2">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/nicolesarna" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </li>
-            <!--    <li>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </li>  -->
-                <li>
-                    <a href="https://twitter.com/NicoleSarna_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:nicole.s.sarna@rice.edu" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-          </div>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/nicolesarna" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/NicoleSarna_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:nicole.s.sarna@rice.edu" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- End #lead-content -->
 
@@ -86,360 +73,47 @@
     </div>
     <!-- End #lead -->
 
-<!--
-    <div id="about">
+    <div id="home-intro">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+            <div class="row home-cards">
+                <div class="col-md-3">
+                    <a href="research.html" class="home-card">
+                        <i class="fa fa-flask" aria-hidden="true"></i>
+                        <h3>Research</h3>
+                        <p>Mechanobiology, T cell activation &amp; cancer immunotherapy</p>
+                    </a>
                 </div>
-                <div class="col-md-8">
-                    <p>
-                        Originally from Winter Park, FL, I attened the University of Florida (UF) for my undergraduate studies in Biomedical Engineering. While at UF, I had the opportunity to work in multiple research labs and discovered my fascination for cancer immunotherapy research. After graduating from UF in April 2021, I began my doctoral studies at Vanderbilt University.<br />
-                        <br />I joined Michael King's laboratory in August 2021, where I am currently researching the behavior of immune cells when activating the mechanosensitive ion channel, Piezo1, using fluid shear stress. My research has the potential to develop high throughput methods of <i>ex vivo</i> immune cell activation for adoptive cell transfer (ACT) cancer immunotherapies. My future work will utilize this methodology to optimize chimeric antigen receptor (CAR) T cell therapies for the treatment of solid tumors.
-                    </p>
+                <div class="col-md-3">
+                    <a href="publications.html" class="home-card">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3>Publications</h3>
+                        <p>10 peer-reviewed publications</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="cv.html" class="home-card">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <h3>CV &amp; Skills</h3>
+                        <p>Education, experience &amp; technical skills</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="about.html" class="home-card">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <h3>About</h3>
+                        <p>Background, interests &amp; outreach</p>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-     -->
-    <!-- End #about -->
-
-
-
-    <div id="education" class="background-alt">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3><strong>Vanderbilt University</strong></h3>
-            <span class="education-date">Aug. 2021 - <strong>Present</strong></span>
-            <h4>Doctor of Philosophy - PhD in Biomedical Engineering</br >
-            <i>Nashville, TN</i></h4>
-            <ul>
-		<li>SyBBURE Searle Undergraduate Research Program</li>
-                <ul>
-		    <li>SyBBURE Searle Graduate Fellow (Jan. 2022 - Present)</li></br >
-                </ul>
-            <li>Teaching Assistant</li>
-                <ul>
-		    <li>BME2900/3900/4901 - BME Lab (I/II/III) (Jan. 2022 - May 2022)</li></br >
-                    <li>ES140X - Intro to Engineering (Aug. 2021 - Dec. 2022)</li></br >
-                </ul>
-            <li>BME Graduate Student Association (GSA)</li>
-                <ul>
-		    <li>Chair - Elementary Education Outreach (Jan. 2022 - Aug. 2023)</li></br >
-                    <li>Co-Chair - Elementary Education Outreach (Aug. 2021 - Dec. 2022)</li></br >
-                </ul>
-            <li>BME Underrepresented Minority Mentorship Program</li>
-                <ul>
-                    <li>Graduate Student Mentor (Aug. 2021 - Present)</li>
-                </ul>
-            </ul>
-          <!--  <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p> -->
-        </div>
-        <!-- End .education-block -->
-
-
-        <div class="education-block">
-            <h3><strong>University of Florida</strong></h3>
-            <span class="education-date">Aug. 2017 - Apr. 2021</span>
-            <h4>Bachelor of Science - BS in Biomedical Engineering, <i>Magna Cum Laude</i></br >
-            <i>Gainesville, FL</i></h4>
-            <ul>
-            <li>Biomedical Engineering Society</li>
-                <ul>
-                    <li>Member (Aug. 2017 - Apr. 2021)</li></br >
-                </ul>
-            <li>Society of Women Engineers</li>
-                <ul>
-                    <li>Member (Aug. 2017 - Apr. 2021)</li></br >
-                </ul>
-            <li>UF Philharmonic Orchestra</li>
-                <ul>
-                    <li>Violinist (Aug. 2017 - Dec. 2017)</li>
-                </ul>
-            </ul>
-
-        <!--    <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul> -->
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-
-    <div id="experience">
-        <h2 class="heading">Research Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="August 2021 – <strong>Present</strong>">
-                <h3 style="color:#383838;">Graduate Student Researcher - Vanderbilt University</h3>
-                <h4 style="color:#696969;">Dr. Michael King Laboratory - Department of Biomedical Engineering - Nashville, TN</h4>
-                <ul>
-                <li>Evaluating the behavior of T cells following activation of the mechanosensitive calcium ion channel, Piezo1</li>
-                <li>Developing third-generation chimeric antigen receptor (CAR) T cells to target prostate specific membrane antigen (PSMA)</li>
-		<li>Enhancing ex vivo activation of CAR T cells to improve cytotoxicity at solid tumor sites following Adoptive Cell Transfer (ACT)</li>
-		<li>Mentor and train freshman undergraduate student where I conceptualize, design, and oversee the undergraduate student's research project which aims to overcome chemotherapy resistant glioblastoma cancer cells through combined treatment regimens
-
-                </ul>
-            </div>
-
-            <div data-date="July 2019 – August 2021">
-                <h3 style="color:#383838;">Undergraduate Student Researcher - University of Florida</h3>
-                <h4 style="color:#696969;">Dr. Carlos M. Rinaldi-Ramos Laboratory - Department of Chemical &amp; Biomedical Engineering - Gainesville, FL</h4>
-                <ul>
-
-                <li>
-                  Characterized super-paramagnetic iron oxide nanoparticles (SPIONs) for <i>in vivo</i> imaging applications in the context of cancer immunotherapy
-                </li>
-
-                <li>
-                  Evaluated the sensitivity and resolution of in-house synthesized SPIONs using the MOMENTUM&trade; Magnetic Particle Imaging (MPI) system
-                </li>
-
-                <li>
-                  Performed <i>in vivo</i> experiments to monitor and track the biodistribution of immune cells following Adoptive Cell Transfer (ACT) in breast cancer and glioblastoma animal models
-                </li>
-
-              </ul>
-            </div>
-
-            <div data-date="September 2020 – March 2021">
-                <h3 style="color:#383838;">Research &amp; Development Intern</h3>
-                <h4 style="color:#696969;">Lucere Laboratories - Gainesville, FL</h4>
-                  <ul>
-                  <li>
-                    Optimized the synthesis of D-Luciferin, a bioluminescent compound, to ensure clean, efficient, and more affordable production
-                  </li>
-
-                  <li>
-                    Conducted market research to validate and prioritize new product offerings
-                  </li>
-
-                  <li>
-                    Identified and communicated internationally with D-Luciferin users to form research collaborations
-                  </li>
-
-                </ul>
-            </div>
-
-            <div data-date="January 2020 – May 2020">
-                <h3 style="color:#383838;">Undergraduate Student Researcher - University of Florida</h3>
-                <h4 style="color:#696969;">Dr. Todd E. Golde Laboratory - Department of Neuroscience - Gainesville, FL</h4>
-                <ul>
-                <li>
-                  Developed MATLAB program to analyze fluorescent images of 3D <i>ex vivo</i> brain slice cultures that exhibit aggregation of tau protein, a primary marker of Alzheimer’s and other neurodegenerative diseases
-                </li>
-              </ul>
-            </div>
-
-            <div data-date="September 2017 – December 2018">
-                <h3 style="color:#383838;">Undergraduate Student Researcher - University of Florida</h3>
-                <h4 style="color:#696969;">Dr. Norman Fitz-Coy Laboratory - Department of Mechanical &amp; Aerospace Engineering - Gainesville, FL</h4>
-                <ul>
-                <li>
-                  Collected data to update NASA’s Standard Breakup Model using Orbital Debris Modeling in collaborative research project, <strong>DebriSat</strong>, between NASA, The Aerospace Corporation, and the US Air Force Space and Missile Systems Center
-                </li>
-
-                <li>
-                Analyzed and characterized space debris fragments generated by hypervelocity collision on a model satellite
-                </li>
-
-              </ul>
-            </div>
-
-        </div>
-    </div>
-    <!-- End #experience -->
-
-<!--
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-            -->
-                    <!-- End .project-image -->
-      <!--
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-            -->
-                    <!-- End .project-info -->
-
-  <!--
-                </div>
-                <!- End .project -->
-
-  <!--
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-
-                -->
-                    <!-- End .project-image -->
-    <!--
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-          -->
-                    <!-- End .project-info -->
-      <!--
-                </div>
-                <!- End .project -->
-
-          <!--
-            </div>
-        </div>
-    </div>
-
-    <!- End #projects -->
-
-
-    <div id="publications" class="background-alt">
-        <h2 class="heading">Publications</h2>
-        <ul>
-			<li><strong>"Fluid Shear Stress as a Co-Stimulatory Cue to Enhance T Cell Priming and Restore Activation in Cancer Patient T Cells"</strong><br />
-            <span class="indent"><u><strong>Sarna, N. S.</strong></u>, Antunovic, M., Hurley, P. J., Schaffer, K. R., King, M. R. </span><br />
-            <span class="indent"><i>The Journal of Immunology</i>, Aug 2026.</span><br />
-	    <span class="indent"><a href="https://academic.oup.com/jimmunol/article/215/8/vkag166/8753211">View Here</a><br /></span></li>    
-		    <li><strong>"Fluoxetine Acts as a Calcium-Dependent Sensitizer of TRAIL-Induced Apoptosis in Glioblastoma Multiforme"</strong><br />
-            <span class="indent"><u><strong>Sarna, N. S.<span>&#42;</span></strong></u>, Desai, S. H.<span>&#42;</span>, Luo, A. C., King, M. R. </span><br />
-            <span class="indent"><i>ACS Omega</i>, March 2026.</span><br />
-	    <span class="indent"><a href="https://pubs.acs.org/acsodf/article/11/11/17796/5078924/Fluoxetine-Acts-as-a-Calcium-Dependent-Sensitizer">View Here</a><br /></span></li> 
-			<li><strong>"Immunomechanobiology: Engineering the Activation and Function of Immune Cells with the Mechanical Signal of Fluid Shear Stress"</strong><br />
-            <span class="indent"><u><strong>Sarna, N. S.</strong></u>, Curry, N. M., Aalaei, E., Kaufman, B. G., King, M. R. </span><br />
-            <span class="indent"><i>IEEE Reviews in Biomedical Engineering</i>, Nov 2024.</span><br />
-	    <span class="indent"><a href="https://ieeexplore.ieee.org/document/10764720">View Here</a><br /></span></li>   
-	    	<li><strong>"Enhanced and Sustained T cell Activation in Response to Fluid Shear Stress"</strong><br />
-            <span class="indent"><u><strong>Sarna, N. S.</strong></u>, Desai, S. H., Kaufman, B. G., Curry, N. M., Hanna, A. M., King, M. R. </span><br />
-            <span class="indent"><i>iScience</i>, May 2024.</span><br />
-	    <span class="indent"><a href="https://www.cell.com/iscience/fulltext/S2589-0042(24)01224-0">View Here</a><br /></span></li>    
-		<li><strong>"Retention of E-selectin Functionalized Liposome Fanny Packs on Jurkat Cells Following Invasion Through Collagen"</strong><br />
-            <span class="indent">King, S. M.<span>&#42;</span>, Ortiz, I.<span>&#42;</span>, <u><strong>Sarna, N. S.<span>&#42;</span></strong></u>, Wang, W., Lopez-Cavestany, M., Zhang, Z. </span><br />
-            <span class="indent"><i>Journal of Immunological Methods</i>, June 2024.</span><br />
-	    <span class="indent"><a href="https://www.sciencedirect.com/science/article/pii/S0022175924000851?via%3Dihub">View Here</a><br /></span></li>
-		<li><strong>"Chemical and Mechanical Activation of Piezo1 Enhances TRAIL-Mediated Apoptosis in Glioblastoma Cells"</strong><br />
-            <span class="indent">Knoblauch, S. V., Desai, S. H., Dombroski, J. A., <u><strong>Sarna, N. S.</strong></u>, Hope, J. M., King, M. R. </span><br />
-            <span class="indent"><i>ACS Omega</i>, May 2023.</span><br />
-	    <span class="indent"><a href="https://pubs.acs.org/doi/10.1021/acsomega.3c00705?ref=PDF">View Here</a><br /></span></li>
-            <li><strong>"An Anatomically Correct 3D Printed Mouse Phantom for Magnetic Particle Imaging Studies"</strong><br />
-            <span class="indent"><u><strong>Sarna, N. S.<span>&#42;</span></strong></u>, Marrero-Morales, L.<span>&#42;</span>, DeGroff, R.<span>&#42;</span>, Rivera-Rodriguez, A., Lui, S., Chiu-Lam, A., Good, H. J., Rinaldi-Ramos, C. M. </span><br />
-            <span class="indent"><i>Bioengineering & Translational Medicine</i>, 2022.</span><br />
-            <span class="indent"><a href="https://doi.org/10.1002/btm2.10299">View Here</a><br /></span></li>
-            <li><strong>"Channeling the Force: Piezo1 Mechanotransduction in Cancer Metastasis"</strong><br />
-            <span class="indent">Dombroski, J. A.<span>&#42;</span>, Hope, J. M.<span>&#42;</span>, <u><strong>Sarna, N. S.</strong></u>, King, M. R. </span><br />
-            <span class="indent"><i>Cells</i>, vol. 10, no. 11, pp. 2815, 2021.</span><br />
-            <span class="indent"><a href="https://www.mdpi.com/2073-4409/10/11/2815">View Here</a><br /></span></li>
-            <li><strong>"Tracking Adoptive T Cell Immunotherapy Using Magnetic Particle Imaging"</strong><br />
-            <span class="indent">Rivera-Rodriguez, A., Hoang-Minh, L., Chiu-Lam, A., <u><strong>Sarna, N. S.</strong></u>, Marrero-Morales, L., Mitchell, D., Rinaldi-Ramos, C. M.<br /></span>
-            <span class="indent"><i>Nanotheranostics</i>, vol. 5, no. 4, pp. 431-444, 2021.</span><br />
-            <span class="indent"><a href="https://ntno.org/v05p0431.htm">View Here</a><br /></span></li>
-            <li><strong>"Long Circulating Tracer Tailored for Magnetic Particle Imaging"</strong><br />
-            <span class="indent">Lui, S.<span>&#42;</span>, Rivera-Rodriguez, A.<span>&#42;</span>, Chiu-Lam, A.<span>&#42;</span>, DeGroff, R., Savliwala, S., <u><strong>Sarna, N. S.</strong></u>, Rinaldi-Ramos, C. M.</span><br />
-            <span class="indent"><i>Nanotheranostics</i>, vol. 5, no. 3, pp. 348-361, 2021.</span><br />
-            <span class="indent"><a href="https://www.ntno.org/v05p0348.htm">View Here</a></span></li>
-        </ul>
-    </div>
-    <!-- End #Publications-->
-
-
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-          <div class="row">
-              <div class="col-md-3">
-                  <h3 class="skills">Research Techniques:</h3>
-              </div>
-              <div class="col-md-6">
-                <ul>
-                    
-		<li>Phlebotomy</li>
-		<li>Mammalian Cell Culture</li>
-                 <li>Animal Handling/In Vivo Work</li>
-		<li>Flow Cytometry</li>
-		<li>Light/Fluorescence/Confocal Microscopy</li>
-		 <li>Liposome Synthesis</li>
-                    <li>Histological Staining</li>
-                    <li>Rotary Microtome</li>
-		    <li>IVIS&reg; SpectrumCT</li>
-                    <li>Magnetic Particle Imaging (MPI)</li>
-                    <li>Dynamic Light Scattering (DLS)</li>
-                    <li>Dynamic Magnetic Susceptibility (DMS)</li>
-		 <li>Lentiviral Transduction/Transfection</li>
-
-                </ul>
-            </div>
-            </div>
-            <br />
-
-      <div class="row">
-          <div class="col-md-3">
-              <h3 class="skills">Analytical Tools:</h3>
-          </div>
-          <div class="col-md-6">
-              <ul> <br />
-                  <li>MATLAB</li>
-                  <li>SolidWorks</li>
-                  <li>OnShape</li>
-                  <li>Autodesk Inventor</li>
-                  <li>3D Slicer</li>
-                  <li>ImageJ</li>
-                  <li>HTML/CSS</li>
-                  <li>Git</li>
-              </ul>
-          </div>
-      </div>
-
-       <br />
-    </div>
-    <!-- End #skills -->
-
-
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="mailto:nicole.s.sarna@rice.edu">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
+    <!-- End #home-intro -->
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2025 Nicole S. Sarna
-                    </p>
+                    <p>Copyright &copy; 2026 Nicole S. Sarna</p>
                 </div>
                 <div class="col-sm-2 top">
                     <span id="to-top">
@@ -451,9 +125,6 @@
                         <li>
                             <a href="https://www.linkedin.com/in/nicolesarna" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
-                    <!--    <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>  -->
                         <li>
                             <a href="https://twitter.com/NicoleSarna_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         </li>

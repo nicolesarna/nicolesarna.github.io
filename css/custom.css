@@ -1,0 +1,1063 @@
+/* ── Inner page header (no hero) ────────────────────────────── */
+body.inner-page header {
+    position: fixed !important;
+    animation: none !important;
+}
+
+body.inner-page .page-content {
+    padding-top: 58px;
+}
+
+/* Full-width navy banner behind the top menu (desktop) so page
+   content never shows through as you scroll. Scoped to desktop to
+   leave the mobile slide-out menu untouched. */
+@media only screen and (min-width: 769px) {
+    body.inner-page header {
+        background: #102a73;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 58px;
+        z-index: 1000;
+    }
+}
+
+/* ── Page title banner (inner pages) ────────────────────────── */
+.page-title-section {
+    background: #3498db;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.page-title-section h1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 0.03em;
+}
+
+/* ── Home intro section ──────────────────────────────────────── */
+#home-intro {
+    padding: 60px 15px;
+    text-align: center;
+    border-bottom: 1px solid #dcd9d9;
+}
+
+#home-intro .intro-text {
+    max-width: 800px;
+    margin: 0 auto 45px auto;
+    color: #74808a;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Equal-size cards at every width: 4-up on desktop, 2x2 on mobile */
+.home-cards {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 18px;
+}
+
+/* Bootstrap's .row clearfix pseudo-elements become phantom grid
+   items — remove them so the grid places only the four cards. */
+.home-cards::before,
+.home-cards::after {
+    content: none;
+}
+
+.home-cards > div {
+    display: flex;
+    padding: 0;
+    width: auto;
+    float: none;
+}
+
+.home-cards .home-card {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .home-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+.home-card {
+    display: block;
+    padding: 35px 20px;
+    background: #f2f2f5;
+    border-radius: 8px;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    border: 1px solid #dcd9d9;
+}
+
+.home-card:hover {
+    background: #3498db;
+    border-color: #3498db;
+    text-decoration: none;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(52, 152, 219, 0.25);
+}
+
+.home-card:hover h3,
+.home-card:hover p,
+.home-card:hover i {
+    color: #fff;
+}
+
+.home-card i {
+    font-size: 2.5em;
+    color: #3498db;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.3s ease all;
+}
+
+.home-card h3 {
+    color: #374054;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    transition: 0.3s ease all;
+}
+
+.home-card p {
+    color: #74808a;
+    margin: 0;
+    font-size: 0.95em;
+    transition: 0.3s ease all;
+}
+
+/* ── Publications: first-author badge ───────────────────────── */
+.pub-badge {
+    display: inline-block;
+    font-size: 0.65em;
+    padding: 2px 8px;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-left: 8px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.pub-badge.first-author {
+    background: #3498db;
+    color: #fff;
+}
+
+.pub-badge.co-author {
+    background: #e4e4ea;
+    color: #374054;
+}
+
+/* ── CV download button ──────────────────────────────────────── */
+.cv-download-section {
+    padding: 50px 15px 30px;
+    text-align: center;
+    border-bottom: 1px solid #dcd9d9;
+}
+
+.btn-cv-download {
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    margin-top: 15px;
+}
+
+.btn-cv-download:hover {
+    background: #217dbb;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(52, 152, 219, 0.35);
+}
+
+.btn-cv-download i {
+    margin-right: 8px;
+}
+
+/* ── About section ───────────────────────────────────────────── */
+#about-page {
+    padding: 60px 15px;
+    border-bottom: 1px solid #dcd9d9;
+}
+
+#about-page .about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #74808a;
+    font-size: 1em;
+    line-height: 1.9;
+}
+
+#about-page .about-text p {
+    margin-bottom: 20px;
+}
+
+/* ── Research: summary statement ────────────────────────────── */
+#research-projects {
+    padding: 50px 15px 60px;
+}
+
+.research-summary {
+    max-width: 850px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    color: #74808a;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* ── Research: project cards ────────────────────────────────── */
+.project-card {
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    background: #fff;
+    border: 1px solid #dcd9d9;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease all;
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
+
+.project-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.project-figure {
+    flex: 1 1 320px;
+    min-height: 240px;
+    background: #eef1f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #aab4bd;
+    border-right: 1px solid #dcd9d9;
+}
+
+.project-card.reverse .project-figure {
+    border-right: none;
+    border-left: 1px solid #dcd9d9;
+}
+
+.project-figure i {
+    font-size: 2.8em;
+    margin-bottom: 12px;
+}
+
+.project-figure span {
+    font-size: 0.78em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.project-body {
+    flex: 1 1 420px;
+    padding: 28px 32px;
+    text-align: left;
+}
+
+.project-tag {
+    display: inline-block;
+    background: #e8f3fb;
+    color: #2980b9;
+    font-size: 0.72em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.project-body h3 {
+    color: #374054;
+    font-size: 1.45em;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+}
+
+.project-body > p {
+    color: #74808a;
+    font-size: 0.95em;
+    line-height: 1.7;
+    margin: 0 0 14px 0;
+}
+
+.project-outcomes {
+    margin: 0 0 16px 18px;
+    padding: 0;
+    color: #5a6670;
+    font-size: 0.9em;
+}
+
+.project-outcomes li {
+    margin-bottom: 5px;
+}
+
+.project-pubs {
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+    font-size: 0.85em;
+    color: #96a0a8;
+    line-height: 1.6;
+}
+
+.project-pubs strong {
+    color: #374054;
+    text-transform: uppercase;
+    font-size: 0.92em;
+    letter-spacing: 0.04em;
+}
+
+.project-pubs a {
+    color: #3498db;
+}
+
+/* ── Research: earlier research strip ───────────────────────── */
+.earlier-research {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.earlier-item {
+    background: #f7f8fa;
+    border: 1px solid #e3e6ea;
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.earlier-item h4 {
+    color: #374054;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    font-size: 1.05em;
+}
+
+.earlier-item p {
+    color: #74808a;
+    font-size: 0.88em;
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 700px) {
+    .project-card,
+    .project-card.reverse {
+        flex-direction: column;
+    }
+    .project-figure,
+    .project-card.reverse .project-figure {
+        border: none;
+        border-bottom: 1px solid #dcd9d9;
+        min-height: 180px;
+    }
+}
+
+/* ── Publications: scholar links band ───────────────────────── */
+.scholar-links {
+    text-align: center;
+    padding: 28px 15px 0;
+}
+
+.scholar-links a {
+    display: inline-block;
+    margin: 6px 8px;
+    padding: 9px 20px;
+    border: 1px solid #dcd9d9;
+    border-radius: 24px;
+    color: #2980b9;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease all;
+}
+
+.scholar-links a:hover {
+    background: #3498db;
+    border-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+}
+
+.scholar-links a i {
+    margin-right: 7px;
+}
+
+/* ── Publications: featured band ────────────────────────────── */
+#featured-pubs {
+    padding: 45px 15px 20px;
+}
+
+.featured-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+}
+
+.featured-card {
+    flex: 1 1 290px;
+    max-width: 330px;
+    background: #fff;
+    border: 1px solid #dcd9d9;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease all;
+}
+
+.featured-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
+
+.featured-thumb {
+    height: 160px;
+    background: #eef1f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #aab4bd;
+    border-bottom: 1px solid #dcd9d9;
+}
+
+.featured-thumb i {
+    font-size: 2.4em;
+    margin-bottom: 10px;
+}
+
+.featured-thumb span {
+    font-size: 0.72em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.featured-body {
+    padding: 18px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.featured-venue {
+    font-size: 0.74em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #2980b9;
+    margin-bottom: 8px;
+}
+
+.featured-body h3 {
+    color: #374054;
+    font-size: 1.02em;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 10px 0;
+}
+
+.featured-body p {
+    color: #74808a;
+    font-size: 0.85em;
+    line-height: 1.5;
+    margin: 0 0 14px 0;
+}
+
+.featured-link {
+    margin-top: auto;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.featured-link:hover {
+    color: #217dbb;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .featured-card {
+        max-width: 100%;
+    }
+}
+
+/* ── Contact card ───────────────────────────────────────────── */
+.contact-card {
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-card .contact-intro {
+    color: #74808a;
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 26px;
+    border-radius: 28px;
+    font-size: 0.95em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease all;
+}
+
+.contact-btn.primary {
+    background: #3498db;
+    color: #fff;
+}
+
+.contact-btn.primary:hover {
+    background: #217dbb;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(52, 152, 219, 0.35);
+}
+
+.contact-btn.outline {
+    border: 1px solid #dcd9d9;
+    color: #2980b9;
+    background: #fff;
+}
+
+.contact-btn.outline:hover {
+    background: #3498db;
+    border-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-btn i {
+    font-size: 1.1em;
+}
+
+.contact-email-line {
+    margin-top: 26px;
+    color: #96a0a8;
+    font-size: 0.9em;
+}
+
+.contact-email-line a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* ── Contact form (Formspree) ───────────────────────────────── */
+.fs-form {
+    max-width: 560px;
+    margin: 0 auto 10px;
+    text-align: left;
+}
+
+.fs-form .fs-row {
+    margin-bottom: 16px;
+}
+
+.fs-form label {
+    display: block;
+    font-size: 0.82em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #374054;
+    margin-bottom: 6px;
+}
+
+.fs-form input,
+.fs-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #dcd9d9;
+    border-radius: 6px;
+    font-size: 0.95em;
+    font-family: inherit;
+    color: #374054;
+    background: #fff;
+    transition: 0.2s ease border-color;
+    -webkit-appearance: none;
+}
+
+.fs-form input:focus,
+.fs-form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.fs-form input[aria-invalid="true"],
+.fs-form textarea[aria-invalid="true"] {
+    border-color: #e74c3c;
+}
+
+.fs-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.fs-form .fs-field-error {
+    display: block;
+    color: #e74c3c;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.fs-form .fs-submit {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 34px;
+    border: none;
+    border-radius: 28px;
+    background: #3498db;
+    color: #fff;
+    font-size: 0.95em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.fs-form .fs-submit:hover {
+    background: #217dbb;
+    box-shadow: 0 4px 16px rgba(52, 152, 219, 0.35);
+}
+
+.fs-form .fs-submit:disabled {
+    opacity: 0.6;
+    cursor: default;
+    box-shadow: none;
+}
+
+.fs-message {
+    max-width: 560px;
+    margin: 0 auto 18px;
+    padding: 14px 18px;
+    border-radius: 6px;
+    font-size: 0.92em;
+    text-align: center;
+}
+
+.fs-message[data-fs-success]:empty,
+.fs-message[data-fs-error]:empty {
+    display: none;
+}
+
+.fs-message[data-fs-success] {
+    background: #eafaf1;
+    border: 1px solid #a9dfbf;
+    color: #1e8449;
+}
+
+.fs-message[data-fs-error] {
+    background: #fdedec;
+    border: 1px solid #f5b7b1;
+    color: #c0392b;
+}
+
+.contact-divider {
+    max-width: 560px;
+    margin: 34px auto 26px;
+    border: none;
+    border-top: 1px solid #e3e6ea;
+}
+
+.contact-alt-label {
+    color: #96a0a8;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 18px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BRAND SYSTEM — Nicole S. Sarna · "Refined Diamond"
+   Navy #102a73 is the brand; azure #3498db is the web accent.
+   Square-edged by default; diamond logo in the nav. Applied over
+   the template and the custom components above.
+   ═══════════════════════════════════════════════════════════════ */
+:root {
+    --paper: #ffffff;
+    --mist: #f2f2f5;
+    --chip: #e4e4ea;
+    --ink-web: #333333;
+    --slate: #374054;
+    --graphite: #383838;
+    --gray: #696969;
+    --muted: #74808a;
+    --navy: #102a73;
+    --sky: #558dd5;
+    --azure: #3498db;
+    --link: #337ab7;
+    --ice: #a0cfee;
+}
+
+/* ── Diamond mark in the nav bar ────────────────────────────── */
+#menu li { vertical-align: middle; }
+#menu .nav-logo a { padding: 4px 14px 4px 6px; }
+#menu .nav-logo a:hover { background: transparent; }
+#menu .nav-logo img { height: 30px; width: auto; display: block; }
+
+@media only screen and (max-width: 768px) {
+    #menu .nav-logo img { height: 46px; margin: 4px auto 14px; }
+}
+
+/* ── Navy is the brand fill: page-title banner ──────────────── */
+.page-title-section { background: var(--navy); }
+
+/* ── Section headings in slate (light weight kept) ──────────── */
+.heading { color: var(--slate); }
+
+/* ── Square edges — the brand reads like a lab notebook ─────── */
+.home-card,
+.project-card,
+.project-card.reverse,
+.featured-card,
+.featured-thumb,
+.project-figure,
+.earlier-item,
+.pub-badge,
+.project-tag { border-radius: 0 !important; }
+
+/* small controls round to radius-sm (4px) */
+.scholar-links a,
+.contact-btn,
+.fs-form .fs-submit,
+.fs-form input,
+.fs-form textarea { border-radius: 4px !important; }
+
+/* ── The CV button: navy outline pill (brand spec) ──────────── */
+.btn-cv-download {
+    background: transparent;
+    color: var(--navy);
+    border: 3px solid var(--navy);
+    padding: 12px 32px;
+}
+
+.btn-cv-download:hover {
+    background: var(--navy);
+    color: #fff;
+    box-shadow: none;
+}
+
+/* ── Card hover uses the brand navy, not azure ──────────────── */
+.home-card:hover {
+    background: var(--navy);
+    border-color: var(--navy);
+    box-shadow: 0 8px 24px rgba(16, 42, 115, 0.25);
+}
+
+.home-card i { color: var(--navy); }
+
+/* ── Pull the key accent blues toward navy ──────────────────── */
+.project-tag { background: #e7ecf7; color: var(--navy); }
+.featured-venue { color: var(--navy); }
+
+/* ── Real figures: show the full graphical abstract on white ───
+   Abstracts vary (landscape and portrait), so use object-fit:contain
+   on a white ground — nothing scientific is cropped, and the image
+   blends with its own white background. */
+.project-figure { background: #fff; padding: 14px; }
+.project-figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.featured-thumb { background: #fff; height: 180px; padding: 12px; }
+.featured-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* ── Featured band: 4-up row → 2×2 → single column ──────────── */
+#featured-pubs { text-align: center; }
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    max-width: 1120px;
+}
+
+.featured-card { max-width: none; }
+.featured-body { text-align: left; }
+
+@media only screen and (max-width: 960px) {
+    .featured-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media only screen and (max-width: 560px) {
+    .featured-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Presentation counts (in place of a full list) ──────────── */
+.pres-summary {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.pres-stat {
+    background: #fff;
+    border: 1px solid #dcd9d9;
+    padding: 24px 40px;
+    text-align: center;
+    min-width: 190px;
+}
+
+.pres-stat .num {
+    display: block;
+    font-size: 2.8em;
+    font-weight: 300;
+    color: var(--navy);
+    line-height: 1;
+}
+
+.pres-stat .label {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--slate);
+}
+
+.pres-note {
+    max-width: 720px;
+    margin: 26px auto 0;
+    text-align: center;
+    color: #74808a;
+    font-size: 0.95em;
+    line-height: 1.7;
+}
+
+/* ── Skills: smaller, tidier chips ──────────────────────────── */
+#skills h3.skills {
+    margin-top: 34px;
+    margin-bottom: 4px;
+    font-size: 1.05em;
+    letter-spacing: 0.02em;
+}
+
+#skills ul { max-width: 780px; }
+
+#skills li {
+    font-size: 0.95em;
+    margin: 5px;
+    padding: 6px 14px;
+    color: var(--slate);
+    line-height: 1.35;
+}
+
+/* ── CV: unify entry text with the timeline's light Lato style ─ */
+#education .education-block h3 {
+    font-weight: 300;
+    font-size: 1.25em;
+    color: #383838;
+}
+#education .education-block h3 strong { font-weight: 300; }
+
+#education .education-block h4 {
+    font-weight: 300;
+    font-size: 1.05em;
+    color: #696969;
+}
+
+#education .education-block span {
+    font-weight: 300;
+    color: #696969;
+}
+
+#education .education-block p,
+#education .education-block ul,
+#education .education-block li {
+    font-size: 0.92em;
+    color: #74808a;
+}
+
+/* Timeline + education/teaching text: smaller on mobile so long
+   titles don't wrap awkwardly. */
+@media only screen and (max-width: 768px) {
+    #experience-timeline .vtimeline-content h3 { font-size: 1.05em; }
+    #experience-timeline .vtimeline-content h4 { font-size: 0.92em; }
+    #experience-timeline .vtimeline-content p,
+    #experience-timeline .vtimeline-content li { font-size: 0.85em; color: #74808a; }
+    #experience-timeline .vtimeline-date { font-size: 0.9em; }
+
+    /* Education & Teaching entry titles */
+    #education .education-block h3 { font-size: 1.05em; }
+    #education .education-block h4 { font-size: 0.92em; }
+
+    /* Left-justify the dates (they float right on desktop) */
+    #education .education-block span,
+    #education .education-block .education-date {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-top: 2px;
+    }
+}
+
+/* ── CV section sub-nav (sticky under the header) ───────────── */
+html { scroll-behavior: smooth; }
+
+.cv-nav {
+    position: sticky;
+    top: 58px;
+    z-index: 50;
+    background: #fff;
+    border-bottom: 1px solid #dcd9d9;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    padding: 11px 10px;
+}
+
+.cv-nav a {
+    display: inline-block;
+    color: var(--navy);
+    font-size: 0.86em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    padding: 6px 15px;
+    margin: 2px;
+    border-radius: 4px;
+    transition: 0.2s ease all;
+}
+
+.cv-nav a:hover,
+.cv-nav a:focus {
+    background: var(--navy);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Invisible anchor targets, offset for the fixed header + sub-nav.
+   NB: no visibility:hidden — that blocks fragment (#anchor) navigation.
+   A zero-height empty span is already invisible. */
+.cv-anchor {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    scroll-margin-top: 112px;
+}
+
+/* On mobile the main header collapses to a hamburger, so pin the
+   section bar to the top and shrink the anchor offset to match. */
+@media only screen and (max-width: 768px) {
+    .cv-nav { top: 0; }
+    .cv-anchor { scroll-margin-top: 60px; }
+}
+
+/* ── Experience timeline: more compact (desktop only) ───────────
+   Scoped to min-width so the template's mobile stacking (which fires
+   below 769px) is left untouched. Node stays centered on the line. */
+@media only screen and (min-width: 769px) {
+    #experience-timeline .vtimeline-point { margin-bottom: 16px; }
+
+    #experience-timeline .vtimeline-icon {
+        width: 40px;
+        height: 40px;
+        margin-left: 284px;
+    }
+
+    #experience-timeline .vtimeline-icon i {
+        font-size: 1.5em;
+        margin-top: 8px;
+    }
+
+    #experience-timeline .vtimeline-date {
+        font-size: 0.92em;
+        top: 7px;
+    }
+
+    #experience-timeline .vtimeline-content {
+        margin-left: 345px;
+        padding: 12px 16px;
+    }
+
+    #experience-timeline .vtimeline-content h3 { font-size: 1.2em; }
+    #experience-timeline .vtimeline-content h4 { font-size: 1em; margin-bottom: 8px; }
+    #experience-timeline .vtimeline-content p,
+    #experience-timeline .vtimeline-content li { font-size: 0.85em; color: #74808a; }
+}
+
+/* ── Contact form: white fields on the paper ground ─────────────
+   The template fills #contact-form inputs with azure-deep (#1d6fa5),
+   which the brand intends for an azure "contact band". This site puts
+   the form on paper, so override to white fields with an azure focus.
+   These match the template's ID specificity and load later, so win. */
+#contact-form input,
+#contact-form textarea {
+    background: #fff;
+    color: var(--ink-web);
+    border: 1px solid #dcd9d9;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    background: #fff;
+    border-color: var(--azure);
+}
+
+#contact-form input::-webkit-input-placeholder,
+#contact-form textarea::-webkit-input-placeholder { color: #9aa4ad; }
+#contact-form input::placeholder,
+#contact-form textarea::placeholder { color: #9aa4ad; }
+
+#contact-form button {
+    display: inline-flex;
+    width: auto;
+    background: var(--azure);
+    color: #fff;
+}
+
+#contact-form button:hover { background: #217dbb; }
